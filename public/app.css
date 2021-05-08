@@ -1,0 +1,16 @@
+body {
+  background: #fff;
+}
+
+article + article {
+  margin-top: 30px;
+}
+
+main {
+  max-width: 600px;
+  margin: auto;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
