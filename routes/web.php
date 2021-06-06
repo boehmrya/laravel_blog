@@ -16,10 +16,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-  \Illuminate\Support\Facades\DB::listen(function($query) {
-    logger($query->sql);
-  });
-
     return view('posts', [
       'posts' => Post::with('category')->get()
     ]);
